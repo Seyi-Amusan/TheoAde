@@ -7,7 +7,7 @@
 @import "tailwindcss/utilities";
 
 .bar{
-    @apply w-9 hover:scale-105 cursor-pointer lg:hidden;
+    @apply w-9 hover:scale-105 cursor-pointer;
 }
 
 .heading-gradient{
@@ -19,15 +19,27 @@
 }
 
 .secondary{
-    @apply text-3xl;
+    @apply text-3xl lg:text-5xl;
 }
 
 .tertiary{
-    @apply text-2xl;
+    @apply text-2xl lg:text-3xl;
 }
 
 .padding-text{
     @apply p-3;
+}
+
+.nav-text{
+    @apply uppercase tracking-wider text-xl;
+}
+
+.nav-text-border{
+    @apply border-b-2 border-gray-900 pb-1;
+}
+
+.nav-mobile{
+    @apply  h-screen w-screen bg-slate-400 absolute justify-center content-center justify-items-start nav-text gap-y-4;
 }
 
 .hover-text{
@@ -52,4 +64,14 @@
 
 .link{
     @apply text-text font-bold text-start underline;
+}
+
+.border-desktop{
+    @apply lg:border border-r border-transparent border-r-gray-500 pr-6;
+}
+
+p{
+    @media (min-width: 1023px) {
+        font-size: 20px;
+    }
 }

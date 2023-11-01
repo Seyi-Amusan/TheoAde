@@ -2,11 +2,13 @@
 module.exports = {
   content: [
     ".src/**/*.{html,js}",
-  './public/home.html'
+  './index.html'
 ],
   theme: {
-    screens : {
-      'blg': '930px',
+    extend: {
+      screens : {
+        'mbp': '930px' //my breakpoint
+      }
     },
 
     extend: {
