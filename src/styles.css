@@ -39,7 +39,7 @@
 }
 
 .nav-mobile{
-    @apply  h-screen w-screen bg-gray-400 absolute justify-center content-center justify-items-start nav-text gap-y-4;
+    @apply  h-screen w-screen bg-black bg-opacity-20 backdrop-blur-lg drop-shadow-lg absolute justify-center content-center justify-items-start nav-text gap-y-4;
 }
 
 .hover-text{
@@ -72,6 +72,6 @@
 
 p{
     @media (min-width: 1023px) {
-        font-size: 17px;
+        font-size: 17 px;
     }
 }
