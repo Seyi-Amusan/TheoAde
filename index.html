@@ -7,39 +7,39 @@
     <script defer src="index.js"></script>
 </head>
 <body class="text-text font-sans bg-background mbp:bg-black">
-    <nav class="grid grid-cols-1 grid-rows-1 justify-between lg:block border-b border-b-gray-400 pb-5">
-        <div class="mx-10 relative mt-12 z-10 flex justify-end">
+    <nav class="grid grid-cols-1 grid-rows-1 justify-between border-b border-b-gray-400 lg:p-5 lg:flex lg:justify-end lg:m-7">
+        <div class="m-7 relative z-10 flex justify-end lg:hidden">
             <img src="./public/icons/openMenu.svg" alt="" class="openMenuBar bar" id="menuBar">             
         </div>
-        <div  id="menus" class="hidden lg:flex lg:justify-items-end">
-            <div class="flex nav-text-border">
+        <div  id="menus" class="hidden lg:flex lg:justify-between w-auto">
+            <div class="flex nav-text-border mr-2 hover-text">
                 <span><a href="#">My Story</a></span>
                 <img class="w-5 mx-3" src="./public/icons/story.svg" alt="">
             </div>
-            <div class="flex nav-text-border">
+            <div class="flex nav-text-border mr-2 hover-text">
                 <span><a href="#">Books</a></span>
                 <img class="w-5 mx-3" src="./public/icons/books.svg" alt="">
             </div>
-            <div class="flex nav-text-border">
+            <div class="flex nav-text-border mr-2 hover-text">
                 <span><a href="#">Projects</a></span>
                 <img class="w-5 mx-3" src="./public/icons/project.svg" alt="">
             </div>
-            <div class="flex nav-text-border">
+            <div class="flex nav-text-border mr-2 hover-text">
                 <span><a href="#">Work With Me</a></span>
                 <img class="w-5 mx-3" src="./public/icons/work.svg" alt="">
             </div>
-            <div class="flex nav-text-border">
+            <div class="flex nav-text-border mr-2 hover-text">
                 <span><a href="#">Free</a></span>
                 <img class="w-5 mx-3" src="./public/icons/free.svg" alt="">
             </div>
-            <div class="flex nav-text-border">
+            <div class="flex nav-text-border hover-text">
                 <span><a href="#">Blog</a></span>
                 <img class="w-5 mx-3" src="./public/icons/blog.svg" alt="">
             </div>            
         </div>
     </nav>
 
-    <header class="mt-6 mx-10 border-b border-b-gray-400 pb-7">
+    <header class="mt-6 lg:mx-10 mx-7 border-b border-b-gray-400 pb-7">
         <div>
             <h3 class="text-2xl lg:text-3xl lg:tracking-wider lg:uppercase">Hi, I'm</h3>
             <h1 class="text-6xl font-bold lg:text-7xl lg:uppercase"><span class="span-heading">Theo</span><span class="bg-gradient-to-r from-text to-gray-700 text-transparent bg-clip-text">philus</span>.</h1>
@@ -48,7 +48,7 @@
         </div>
     </header>
 
-    <main class="py-7 mx-10 border-b border-b-gray-400 pb-7">
+    <main class="py-7 lg:mx-10 mx-7 border-b border-b-gray-400 pb-7">
         <section class="margin-section">
             <h2 class="heading-gradient margin-heading secondary">Your <span class="span-heading underline">First</span> Unsolicited Advice</h2>
 
@@ -128,7 +128,7 @@
         <section class="margin-section">
             <h2 class="heading-gradient margin-heading secondary"><span class="span-heading">How</span> I do this?</h2>
             <p class="padding-text hover-text pb-0">We are bombarded by information but lacking insights. I bring you actionable insights via: </p>
-            <div class="lg:grid columns-3 grid-flow-col gap-x-8 items-stretch lg:text-center">
+            <div class="lg:grid lg:columns-3 lg:grid-flow-col lg:gap-x-8 lg:items-stretch lg:text-center">
                 <div class="padding-text border-desktop">
                     <a href="#" class="text-xl link">Books</a>
                     <p class="ml-4 lg:m-0">Simple, interesting, & coherent guides that help you move from A – to – B.</p>
@@ -149,7 +149,7 @@
                 <p class="tracking-wider">LET'S TALK</p>
                 <h2 class="heading-gradient margin-heading secondary">About Your Next <span class="span-heading">Project</span></h2>
             </div>
-            <div class="ml-4 mb-3 lg:grid columns-4 grid-flow-col gap-x-6 items-stretch lg:text-center">
+            <div class="ml-4 mb-3 lg:grid lg:columns-4 lg:grid-flow-col lg:gap-x-6 lg:items-stretch lg:text-center">
                 <div class="mb-3 border-desktop">
                     <a href="#" class="tertiary font-bold"><span class=" span-heading">Website Design</span></a>
                     <p class="ml-4 lg:m-0">I design brilliant websites that are fully optimized for conversion.</p>
@@ -175,7 +175,7 @@
         </section>
     </main>
 
-    <footer class="my-7 mx-7">
+    <footer class="my-7 lg:mx-10 mx-7">
         <div class="mb-5">
             <p>Theo@theophilusadeyinka.com</p>
             <p>Lagos, Nigeria</p>

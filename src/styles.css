@@ -27,7 +27,7 @@
 }
 
 .padding-text{
-    @apply p-3;
+    @apply lg:p-3 p-2;
 }
 
 .nav-text{
@@ -35,11 +35,11 @@
 }
 
 .nav-text-border{
-    @apply border-b-2 border-gray-900 pb-1;
+    @apply border-b-2 border-gray-900 pb-1 lg:border-0;
 }
 
 .nav-mobile{
-    @apply  h-screen w-screen bg-slate-400 absolute justify-center content-center justify-items-start nav-text gap-y-4;
+    @apply  h-screen w-screen bg-gray-400 absolute justify-center content-center justify-items-start nav-text gap-y-4;
 }
 
 .hover-text{
@@ -59,7 +59,7 @@
 }
 
 .margin-section{
-    @apply mb-10;
+    @apply mb-10 lg:mb-14;
 }
 
 .link{
@@ -67,7 +67,7 @@
 }
 
 .border-desktop{
-    @apply lg:border border-r border-transparent border-r-gray-500 pr-6;
+    @apply lg:border lg:border-r lg:border-transparent lg:border-r-gray-500 lg:pr-6;
 }
 
 p{
