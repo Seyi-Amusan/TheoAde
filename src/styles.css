@@ -6,30 +6,11 @@
 
 @import "tailwindcss/utilities";
 
+
+/* NAVIGATION */
 .bar{
     @apply w-9 hover:scale-105 cursor-pointer;
 }
-
-.heading-gradient{
-    @apply bg-gradient-to-r from-gray-700 to-text text-transparent bg-clip-text font-bold;
-}
-
-.margin-heading{
-    @apply mb-5 text-start;
-}
-
-.secondary{
-    @apply text-3xl lg:text-5xl;
-}
-
-.tertiary{
-    @apply text-2xl lg:text-3xl;
-}
-
-.padding-text{
-    @apply lg:p-3 p-2;
-}
-
 .nav-text{
     @apply uppercase tracking-wider text-xl;
 }
@@ -42,12 +23,47 @@
     @apply  h-screen w-screen bg-black bg-opacity-20 backdrop-blur-lg drop-shadow-lg absolute justify-center content-center justify-items-start nav-text gap-y-4;
 }
 
-.hover-text{
-    @apply hover:shadow-md hover:scale-105 transition ease-out duration-200;
+
+
+
+
+/* HEADING */
+.secondary{
+    @apply text-3xl lg:text-5xl;
 }
 
+.tertiary{
+    @apply text-2xl lg:text-3xl;
+}
+
+.heading-gradient{
+    @apply bg-gradient-to-r from-gray-700 to-text text-transparent bg-clip-text font-bold;
+}
+
+.margin-heading{
+    @apply mb-5 text-start;
+}
+.marginTertiary-heading{
+    @apply mt-7 mb-3;
+}
 .span-heading{
     @apply bg-gradient-to-r from-primary-500 to-primary-300 text-transparent bg-clip-text;
+}
+
+
+
+
+
+
+/* TEXT */
+.padding-text{
+    @apply lg:p-3 p-2;
+}
+.marginBottom-text{
+    @apply mb-5;
+}
+.hover-text{
+    @apply hover:shadow-md transition ease-out duration-200;
 }
 
 .span-text{
@@ -57,21 +73,52 @@
 .tick{
     @apply w-5 mt-1 mr-2;
 }
-
-.margin-section{
-    @apply mb-10 lg:mb-14;
+.transition-text{
+    @apply transition ease-out duration-200;
 }
 
-.link{
-    @apply text-text font-bold text-start underline;
-}
+
+
+
 
 .border-desktop{
     @apply lg:border lg:border-r lg:border-transparent lg:border-r-gray-500 lg:pr-6;
 }
 
+.border{
+    @apply border-b border-b-gray-400 border-transparent;
+}
+
+.margin-section{
+    @apply mb-10 lg:mb-14;
+}
+
+.margin-general{
+    @apply mx-7;
+}
+
+.padding-general{
+    @apply px-7;
+}
+.link{
+    @apply text-text font-bold text-start underline;
+}
+
 p{
     @media (min-width: 1023px) {
-        font-size: 17 px;
+        font-size: 17px;
     }
+    @apply hover:shadow-md transition ease-out duration-200;
 }
+.body{
+    @apply text-text font-sans bg-background;
+}
+.grid-decor{
+    @apply border-2 border-spacing-1 p-2 border-primary-300 rounded;
+}
+.books{
+    @apply grid-decor transition-text;
+}
+
+
+/* GRID */

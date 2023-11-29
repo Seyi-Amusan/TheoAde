@@ -1,0 +1,40 @@
+<html>
+    <head>
+        <title>Nav component</title>
+        <script type="module" src="../js/nav.js"></script>
+    </head>
+
+    <body>
+        <nav id="nav" class="z-30 grid grid-cols-1 grid-rows-1 justify-between border-b border-b-gray-400 lg:p-5 lg:flex lg:justify-end lg:m-7">
+            <div class="m-7 relative z-10 flex justify-end lg:hidden">
+                <img src="./public/icons/openMenu.svg" alt="" class="openMenuBar bar" id="menuBar">             
+            </div>
+            <div  id="menus" class="hidden lg:flex lg:justify-between w-auto">
+                <div class="flex nav-text-border mr-2 hover-text">
+                    <span><a href="story.html">My Story</a></span>
+                    <img class="w-5 mx-3" src="./public/icons/story.svg" alt="">
+                </div>
+                <div class="flex nav-text-border mr-2 hover-text">
+                    <span><a href="#">Books</a></span>
+                    <img class="w-5 mx-3" src="./public/icons/books.svg" alt="">
+                </div>
+                <div class="flex nav-text-border mr-2 hover-text">
+                    <span><a href="#">Projects</a></span>
+                    <img class="w-5 mx-3" src="./public/icons/project.svg" alt="">
+                </div>
+                <div class="flex nav-text-border mr-2 hover-text">
+                    <span><a href="#">Work With Me</a></span>
+                    <img class="w-5 mx-3" src="./public/icons/work.svg" alt="">
+                </div>
+                <div class="flex nav-text-border mr-2 hover-text">
+                    <span><a href="#">Free</a></span>
+                    <img class="w-5 mx-3" src="./public/icons/free.svg" alt="">
+                </div>
+                <div class="flex nav-text-border hover-text">
+                    <span><a href="#">Blog</a></span>
+                    <img class="w-5 mx-3" src="./public/icons/blog.svg" alt="">
+                </div>            
+            </div>
+</nav>
+    </body>
+</html>
