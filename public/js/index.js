@@ -1,13 +1,23 @@
 const body = document.querySelector('#body');
+const header = document.querySelector('#header');
+const div = document.querySelector('#headerDiv');
 const menuBar = document.querySelector('#menuBar');
 const menus = document.querySelector('#menus');
 const viewportWidth = window.innerWidth;
 const viewportHeight = window.innerHeight;
-const scroll = window.scrollY 
+const scroll = window.scrollY;
+const nav = document.createElement('nav')
+nav.classList.add('z-30', 'grid',  'grid-cols-1', 'grid-rows-1', 'justify-between', 'border-b', 'border-b-gray-400', 'lg:p-5', 'lg:flex', 'lg:justify-end', 'lg:m-7')
+console.log(nav);
 
-import {nav, footer} from './components.js';
+// nav.append(navChild)
 
-// body.insertAdjacentElement('afterbegin', '')
+import {navChild} from './components.js';
+
+// header.insertBefore(nav, div);
+
+// console.log(typeof nav);
+// body.append(nav);
 // console.log(body.firstChild);
 // console.log(x);
 // console.log(nav);
@@ -53,8 +63,8 @@ const navFunc = () => {
 
 
 const initApp = () => {
-    navFunc();
-    displayNavFunc();
+    //navFunc();
+    //displayNavFunc();
 }
 
 

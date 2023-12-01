@@ -90,7 +90,7 @@
 }
 
 .margin-section{
-    @apply mb-10 lg:mb-14;
+    @apply mb-16 lg:mb-20;
 }
 
 .margin-general{
