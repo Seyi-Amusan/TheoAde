@@ -111,7 +111,7 @@ p{
     @apply hover:shadow-md transition ease-out duration-200;
 }
 .body{
-    @apply text-text font-sans bg-background;
+    @apply text-text font-body bg-background;
 }
 .grid-decor{
     @apply border-2 border-spacing-1 p-2 border-primary-300 rounded;
@@ -119,6 +119,11 @@ p{
 .books{
     @apply grid-decor transition-text;
 }
-
+.header{
+    @apply padding-general mt-16 margin-heading;
+}
+.primary{
+    @apply secondary font-bold heading-gradient text-center;
+}
 
 /* GRID */

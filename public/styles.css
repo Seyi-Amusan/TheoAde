@@ -536,6 +536,27 @@ video {
   --tw-backdrop-sepia:  ;
 }
 
+.relative{
+  position: relative;
+}
+
+.z-10{
+  z-index: 10;
+}
+
+.z-30{
+  z-index: 30;
+}
+
+.m-7{
+  margin: 1.75rem;
+}
+
+.mx-3{
+  margin-left: 0.75rem;
+  margin-right: 0.75rem;
+}
+
 .mx-7{
   margin-left: 1.75rem;
   margin-right: 1.75rem;
@@ -546,12 +567,37 @@ video {
   margin-right: auto;
 }
 
+.my-7{
+  margin-top: 1.75rem;
+  margin-bottom: 1.75rem;
+}
+
+.mb-2{
+  margin-bottom: 0.5rem;
+}
+
 .mb-3{
   margin-bottom: 0.75rem;
 }
 
-.mb-8{
-  margin-bottom: 2rem;
+.mb-4{
+  margin-bottom: 1rem;
+}
+
+.mb-5{
+  margin-bottom: 1.25rem;
+}
+
+.mb-6{
+  margin-bottom: 1.5rem;
+}
+
+.mb-7{
+  margin-bottom: 1.75rem;
+}
+
+.mb-9{
+  margin-bottom: 2.25rem;
 }
 
 .ml-4{
@@ -562,16 +608,20 @@ video {
   margin-right: 0.5rem;
 }
 
-.mt-16{
-  margin-top: 4rem;
-}
-
 .mt-2{
   margin-top: 0.5rem;
 }
 
 .mt-20{
   margin-top: 5rem;
+}
+
+.mt-3{
+  margin-top: 0.75rem;
+}
+
+.mt-4{
+  margin-top: 1rem;
 }
 
 .mt-5{
@@ -582,24 +632,16 @@ video {
   margin-top: 1.5rem;
 }
 
-.mb-5{
-  margin-bottom: 1.25rem;
-}
-
-.mb-9{
-  margin-bottom: 2.25rem;
-}
-
-.mb-7{
-  margin-bottom: 1.75rem;
-}
-
 .flex{
   display: flex;
 }
 
 .grid{
   display: grid;
+}
+
+.hidden{
+  display: none;
 }
 
 .h-6{
@@ -610,20 +652,32 @@ video {
   height: 1.75rem;
 }
 
+.w-5{
+  width: 1.25rem;
+}
+
+.w-auto{
+  width: auto;
+}
+
 .grid-flow-col{
   grid-auto-flow: column;
+}
+
+.grid-cols-1{
+  grid-template-columns: repeat(1, minmax(0, 1fr));
 }
 
 .grid-cols-2{
   grid-template-columns: repeat(2, minmax(0, 1fr));
 }
 
-.grid-rows-4{
-  grid-template-rows: repeat(4, minmax(0, 1fr));
+.grid-rows-1{
+  grid-template-rows: repeat(1, minmax(0, 1fr));
 }
 
-.grid-rows-none{
-  grid-template-rows: none;
+.grid-rows-4{
+  grid-template-rows: repeat(4, minmax(0, 1fr));
 }
 
 .items-start{
@@ -634,8 +688,25 @@ video {
   align-items: center;
 }
 
+.justify-start{
+  justify-content: flex-start;
+}
+
+.justify-end{
+  justify-content: flex-end;
+}
+
 .justify-center{
   justify-content: center;
+}
+
+.justify-between{
+  justify-content: space-between;
+}
+
+.gap-x-2{
+  -moz-column-gap: 0.5rem;
+       column-gap: 0.5rem;
 }
 
 .gap-x-5{
@@ -655,48 +726,25 @@ video {
   row-gap: 1rem;
 }
 
-.gap-y-8{
-  row-gap: 2rem;
-}
-
-.gap-x-2{
-  -moz-column-gap: 0.5rem;
-       column-gap: 0.5rem;
-}
-
 .gap-y-5{
   row-gap: 1.25rem;
+}
+
+.gap-y-8{
+  row-gap: 2rem;
 }
 
 .border{
   border-width: 1px;
 }
 
-.border-2{
-  border-width: 2px;
-}
-
 .border-b{
   border-bottom-width: 1px;
-}
-
-.border-transparent{
-  border-color: transparent;
 }
 
 .border-b-gray-400{
   --tw-border-opacity: 1;
   border-bottom-color: rgb(156 163 175 / var(--tw-border-opacity));
-}
-
-.border-l-primary-300{
-  --tw-border-opacity: 1;
-  border-left-color: rgb(255 181 102 / var(--tw-border-opacity));
-}
-
-.border-r-primary-300{
-  --tw-border-opacity: 1;
-  border-right-color: rgb(255 181 102 / var(--tw-border-opacity));
 }
 
 .bg-gradient-to-r{
@@ -718,6 +766,11 @@ video {
           background-clip: text;
 }
 
+.px-7{
+  padding-left: 1.75rem;
+  padding-right: 1.75rem;
+}
+
 .py-7{
   padding-top: 1.75rem;
   padding-bottom: 1.75rem;
@@ -725,6 +778,10 @@ video {
 
 .pb-0{
   padding-bottom: 0px;
+}
+
+.pb-4{
+  padding-bottom: 1rem;
 }
 
 .pb-7{
@@ -737,10 +794,6 @@ video {
 
 .text-center{
   text-align: center;
-}
-
-.text-start{
-  text-align: start;
 }
 
 .text-2xl{
@@ -1017,7 +1070,7 @@ p:hover{
 .body{
   --tw-bg-opacity: 1;
   background-color: rgb(255 250 235 / var(--tw-bg-opacity));
-  font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-family: Nunito;
   --tw-text-opacity: 1;
   color: rgb(19 14 1 / var(--tw-text-opacity));
 }
@@ -1048,6 +1101,40 @@ p:hover{
   --tw-border-opacity: 1;
   border-color: rgb(255 181 102 / var(--tw-border-opacity));
   padding: 0.5rem;
+}
+
+.header{
+  margin-top: 4rem;
+  margin-bottom: 1.25rem;
+  text-align: start;
+  padding-left: 1.75rem;
+  padding-right: 1.75rem;
+}
+
+.primary{
+  text-align: center;
+  font-weight: 700;
+  font-size: 1.875rem;
+  line-height: 2.25rem;
+}
+
+@media (min-width: 1024px){
+  .primary{
+    font-size: 3rem;
+    line-height: 1;
+  }
+}
+
+.primary{
+  background-image: linear-gradient(to right, var(--tw-gradient-stops));
+  --tw-gradient-from: #374151 var(--tw-gradient-from-position);
+  --tw-gradient-to: rgb(55 65 81 / 0) var(--tw-gradient-to-position);
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
+  --tw-gradient-to: #130e01 var(--tw-gradient-to-position);
+  -webkit-background-clip: text;
+          background-clip: text;
+  font-weight: 700;
+  color: transparent;
 }
 
 /* GRID */
@@ -1086,6 +1173,10 @@ p:hover{
     -moz-column-gap: 1.25rem;
          column-gap: 1.25rem;
   }
+
+  .sm\:text-center{
+    text-align: center;
+  }
 }
 
 @media (min-width: 768px){
@@ -1102,16 +1193,8 @@ p:hover{
     margin-right: auto;
   }
 
-  .md\:grid{
-    display: grid;
-  }
-
   .md\:w-10\/12{
     width: 83.333333%;
-  }
-
-  .md\:w-80{
-    width: 20rem;
   }
 
   .md\:w-96{
@@ -1120,10 +1203,6 @@ p:hover{
 
   .md\:grid-cols-2{
     grid-template-columns: repeat(2, minmax(0, 1fr));
-  }
-
-  .md\:justify-center{
-    justify-content: center;
   }
 
   .md\:justify-items-center{
@@ -1140,13 +1219,34 @@ p:hover{
     margin: 0px;
   }
 
+  .lg\:m-7{
+    margin: 1.75rem;
+  }
+
   .lg\:mx-10{
     margin-left: 2.5rem;
     margin-right: 2.5rem;
   }
 
+  .lg\:mb-8{
+    margin-bottom: 2rem;
+  }
+
+  .lg\:flex{
+    display: flex;
+  }
+
   .lg\:grid{
     display: grid;
+  }
+
+  .lg\:hidden{
+    display: none;
+  }
+
+  .lg\:columns-2{
+    -moz-columns: 2;
+         columns: 2;
   }
 
   .lg\:columns-3{
@@ -1163,8 +1263,29 @@ p:hover{
     grid-auto-flow: column;
   }
 
+  .lg\:items-center{
+    align-items: center;
+  }
+
   .lg\:items-stretch{
     align-items: stretch;
+  }
+
+  .lg\:justify-end{
+    justify-content: flex-end;
+  }
+
+  .lg\:justify-center{
+    justify-content: center;
+  }
+
+  .lg\:justify-between{
+    justify-content: space-between;
+  }
+
+  .lg\:gap-x-12{
+    -moz-column-gap: 3rem;
+         column-gap: 3rem;
   }
 
   .lg\:gap-x-6{
@@ -1175,6 +1296,15 @@ p:hover{
   .lg\:gap-x-8{
     -moz-column-gap: 2rem;
          column-gap: 2rem;
+  }
+
+  .lg\:p-5{
+    padding: 1.25rem;
+  }
+
+  .lg\:px-10{
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
   }
 
   .lg\:text-center{

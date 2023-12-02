@@ -6,6 +6,7 @@ module.exports = {
     './public/html/story.html',
     './public/html/books.html',
     './public/html/projects.html',
+    './public/html/work-with-me.html',
 ],
   theme: {
     extend: {
