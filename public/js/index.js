@@ -17,11 +17,11 @@ const displayNavFunc = () => {
             menuBar.classList.remove('openMenuBar'); 
             menuBar.classList.add('closeMenuBar');
         } else if (menuBar.classList.contains('closeMenuBar') && menus.classList.contains('grid')) {
-                menus.classList.remove('grid'); //makes the nav invisible
-                menus.classList.add('hidden'); //displays the nav as a hidden
-                menuBar.src = "./public/icons/openMenu.svg"; //changes the nav icon
-                menuBar.classList.remove('closeMenuBar'); 
-                menuBar.classList.add('openMenuBar');
+            menus.classList.remove('grid'); //makes the nav invisible
+            menus.classList.add('hidden'); //displays the nav as a hidden
+            menuBar.src = "./public/icons/openMenu.svg"; //changes the nav icon
+            menuBar.classList.remove('closeMenuBar'); 
+            menuBar.classList.add('openMenuBar');
         }
         return;
     });
