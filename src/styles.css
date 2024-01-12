@@ -10,21 +10,48 @@
 /* NAVIGATION */
 .bar{
     @apply w-9 hover:scale-105 cursor-pointer;
-    margin: 15px 0 0 80vw;
-}
-.nav-text{
-    @apply uppercase tracking-wider text-xl;
+    margin-left: 80vw;
 }
 
-.nav-text-border{
-    @apply border-b-2 border-gray-900 pb-1 lg:border-0;
-}
-
-.nav-mobile{
-    @apply backdrop-filter text-gray-800  h-screen w-screen bg-black bg-opacity-20 backdrop-blur-lg drop-shadow-lg absolute justify-center content-center justify-items-start nav-text gap-y-4;
+#menus{
+    @apply lg:bg-none footer-gradient;
+    @media (min-width: 1020px) {
+        position: unset;
+        grid-template-columns: repeat(6, max-content);
+        width: auto;
+    }
 }
 
 
+
+.remove-mobile-nav{
+    right: -100%;
+    transition: all .2s ease-in-out;
+}
+
+.add-mobile-nav{
+    right: 0;
+    transition: all .2s ease-in-out;
+}
+
+.menuItem{
+    @apply rounded-sm primary-block flex lg:mr-4 mb-6 lg:mb-0 px-2 py-2 bg-primary-800 lg:bg-slate-50 lg:bg-opacity-50 text-lg uppercase lg:hover:shadow-lg hover:font-bold               ;
+    span{
+        @apply mr-3 lg:mr-0;
+    }
+}
+
+.menu-bar-mobile{
+    @apply h-12 mr-4 z-10;
+}
+
+.footer{
+    @apply py-7 lg:px-10 px-7 footer-gradient text-nf-text;
+}
+
+#nav{
+    @apply footer-gradient h-16 lg:h-28 z-50 relative ;
+}
 
 
 
@@ -74,13 +101,6 @@
 .tick{
     @apply w-5 mt-1 mr-2;
 }
-.transition-text{
-    @apply transition ease-out duration-200;
-}
-
-
-
-
 
 .bg-blur{
     @apply bg-gray-800 bg-opacity-30 backdrop-blur-lg drop-shadow-lg;
@@ -98,9 +118,9 @@
     @apply border-b border-b-gray-400 border-transparent;
 }
 
-/* .margin-section{
+.margin-section{
     @apply mb-28 lg:mb-36;
-} */
+}
 
 .margin-general{
     @apply mx-7;
@@ -121,7 +141,7 @@ p{
 }
 
 section{
-    @apply mb-28 lg:mb-36 margin-general mx-7;
+    @apply my-20 lg:my-32 margin-general mx-7;
 }
 .body{
     @apply text-text font-body bg-background;
@@ -130,7 +150,7 @@ section{
     @apply border-2 border-spacing-1 p-2 border-primary-300 rounded;
 }
 .books{
-    @apply grid-decor transition-text;
+    @apply grid-decor;
 }
 .header{
     @apply padding-general margin-heading;

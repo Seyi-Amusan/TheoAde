@@ -7,32 +7,43 @@
     <title>Blog | Theophilus Adeyinka</title>
 </head>
 <body class="body">
-    <header class="header border mt-14">
+    <nav id="nav" class="h-16 lg:h-24 z-50 relative">
+        <button class="lg:hidden absolute z-20 right-0 top-2 nav-btn">
+            <img id="menuBar" src="../icons/openMenu.svg" alt="" class="menu-bar-mobile openMenuBar cursor-pointer menuBar" >
+        </button>
+        <ul id="menus" class="flex lg:grid lg:grid-flow-col pt-20 lg:pt-0  flex-col items-center h-screen lg:h-full w-full bg-nav lg:bg-transparent fixed z-10 remove-mobile-nav top-0 lg:float-right">
+    </nav>
+    <header class="header border mt-7">
         <h1 class="primary mb-3"><span class="span-heading">BLOG</span></h1>
+        <p class="text-center mb-6">A few, good thoughts…</p>
     </header>
-    <main class="margin-general">
-        <div class="grid gap-y-5 sm:grid-cols-2 gap-6 lg:grid-cols-3">
-            <p class="block_ primary-block py-2 px-4 font-bold text-start">Strategic Quitting: When to Quit and When 
-                to Win</p>
-            <p class="block_ gray-block text-gray-100 py-2 px-4 font-bold text-start">How to Write Your First 
-                The Only Introduction to Personal Finance 
-                You Will Ever Need
-                </p>
-            <div class="block_ primary-block py-2 px-4">
-                <p class="font-bold text-start">Smart Friends for People Like Us</p>
-                <p class="text-start">Raw, undiluted thoughts from the most 
-                    prolific authors I have read.</p>
-                <p class="text-start">This is an article that never ends. I will 
-                    update this as I meet more interesting 
-                    people, and you may want to come here 
-                    periodically to see the latest additions.</p>
-            </div>
-            <p class="block_ gray-block text-gray-100 py-2 px-4 font-bold text-start">Resume Writing and Cover 
-                he Only Introduction to Personal Finance 
-                You Will Ever Need</p>
-            <p class="block_ primary-block py-2 px-4 font-bold text-start">Destressing by Reading: The Healing 
-                Powers of a Good Book</p>
-        </div>        
+    <main>
+        <section>
+            <div class="grid gap-y-5 sm:grid-cols-2 gap-6 lg:grid-cols-3 ">
+                <p class="block_ primary-block py-2 px-4 font-bold text-start">Strategic Quitting: When to Quit and When 
+                    to Win</p>
+                <p class="block_ gray-block text-gray-100 py-2 px-4 font-bold text-start">How to Write Your First 
+                    The Only Introduction to Personal Finance 
+                    You Will Ever Need
+                    </p>
+                <div class="block_ primary-block py-2 px-4">
+                    <p class="font-bold text-start">Smart Friends for People Like Us</p>
+                    <p class="text-start">Raw, undiluted thoughts from the most 
+                        prolific authors I have read.</p>
+                    <p class="text-start">This is an article that never ends. I will 
+                        update this as I meet more interesting 
+                        people, and you may want to come here 
+                        periodically to see the latest additions.</p>
+                </div>
+                <p class="block_ gray-block text-gray-100 py-2 px-4 font-bold text-start">Resume Writing and Cover 
+                    he Only Introduction to Personal Finance 
+                    You Will Ever Need</p>
+                <p class="block_ primary-block py-2 px-4 font-bold text-start">Destressing by Reading: The Healing 
+                    Powers of a Good Book</p>
+            </div>    
+        </section>    
     </main>
+    <footer class="footer mt-28"></footer>
+    <script type="module" src="../js/components.js" defer></script>
 </body>
 </html>

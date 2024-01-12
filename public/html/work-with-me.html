@@ -5,10 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../styles.css">
     <title>Work With Me | Theophilus Adeyinka</title>
-    <script src="../js/work-with-me.js" defer></script>
+    <script type="module" src="../js/components.js" defer></script>
 </head>
 <body class="body">
-    <header class="header border mt-14">
+    <nav id="nav" class="h-16 lg:h-24 z-50 relative">
+        <button class="lg:hidden absolute z-20 right-0 top-2 nav-btn">
+            <img id="menuBar" src="../icons/openMenu.svg" alt="" class="menu-bar-mobile openMenuBar cursor-pointer menuBar" >
+        </button>
+        <ul id="menus" class="flex lg:grid lg:grid-flow-col pt-20 lg:pt-0  flex-col items-center h-screen lg:h-full w-full bg-nav lg:bg-transparent fixed z-10 remove-mobile-nav top-0 lg:float-right">
+    </nav>
+    <header class="header border mt-7">
         <h1 class="primary mb-2">WORK <span class="span-heading">WITH ME</span></h1>
         <p class="mt-3 font-semibold text-center">I pride myself in a few good things that are natural to me. Let’s talk about your next project.</p>
         <nav class="mt-4 mb-4 lg:mb-8">
@@ -149,5 +155,6 @@
         </section>
 
     </main>
+    <footer class="footer"></footer>
 </body>
 </html>

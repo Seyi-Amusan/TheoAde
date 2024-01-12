@@ -7,18 +7,17 @@ module.exports = {
     './public/html/books.html',
     './public/html/projects.html',
     './public/html/work-with-me.html',
+    './public/html/form.html',
 ],
   theme: {
     extend: {
-      screens : {
-        'mbp': '930px' //my breakpoint
-      }
     },
 
     extend: {
       colors: {
         'text': '#130e01',
         'nf-text': '#E1E1E1',
+        'nav': '#fffdfa',
         'nf-background': '#343434',
         'background': '#fffaeb',
         'primary': {

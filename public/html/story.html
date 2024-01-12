@@ -4,16 +4,23 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../styles.css">
+    <script  src="../js/components.js" defer></script>
     <title>My Story | Theophilus Adeyinka</title>
 </head>
 <body class="body">
-    <header class="header border mt-14">
+    <nav id="nav" class="h-16 lg:h-24 z-50 relative">
+        <button class="lg:hidden absolute z-20 right-0 top-2 nav-btn">
+            <img id="menuBar" src="../icons/openMenu.svg" alt="" class="menu-bar-mobile openMenuBar cursor-pointer menuBar" >
+        </button>
+        <ul id="menus" class="flex lg:grid lg:grid-flow-col pt-20 lg:pt-0  flex-col items-center h-screen lg:h-full w-full bg-nav lg:bg-transparent fixed z-10 remove-mobile-nav top-0 lg:float-right">
+    </nav>
+    <header class="header border mt-7">
         <h1 class="primary mb-3">MY <span class="span-heading">STORY</span></h1>
     </header>
     <main>
         <section>
             <article>
-                <p class="marginBottom-text hover-text hover-text">There is a saying: Life gives you wisdom but only after it has robbed you of strength</p>
+                <p class="marginBottom-text hover-text">There is a saying: Life gives you wisdom but only after it has robbed you of strength</p>
                 <p class="marginBottom-text hover-text">
                     Ever been in one of those situations where you know the right response but only after the 
                     conversation has happened? That feeling, right? So is my journey. Except I’m one of the 
@@ -101,5 +108,6 @@
         </section>
 
     </main>
+    <footer class="footer"></footer>
 </body>
 </html>

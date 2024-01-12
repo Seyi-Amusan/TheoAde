@@ -4,10 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../styles.css">
+    <script type="module" src="../js/components.js" defer></script>
     <title>Projects | Theophilus Adeyinka</title>
 </head>
 <body class="body">
-    <header class="header border mt-14">
+    <nav id="nav" class="h-16 lg:h-24 z-50 relative">
+        <button class="lg:hidden absolute z-20 right-0 top-2 nav-btn">
+            <img id="menuBar" src="../icons/openMenu.svg" alt="" class="menu-bar-mobile openMenuBar cursor-pointer menuBar" >
+        </button>
+<ul id="menus" class="flex lg:grid lg:grid-flow-col pt-20 lg:pt-0  flex-col items-center h-screen lg:h-full w-full bg-nav lg:bg-transparent fixed z-10 remove-mobile-nav top-0 lg:float-right">
+    </nav>
+    <header class="header border mt-7">
         <h1 class="primary"><span class="span-heading">PROJECTS</span></h1>
         <h3 class="mt-2 text-center">Things I move forward for everyday</h3>
         <nav class="mt-5 pb-7">
@@ -103,5 +110,6 @@
             </div>
         </section>
     </main>
+    <footer class="footer"></footer>
 </body>
 </html>
