@@ -5,51 +5,156 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../styles.css">
     <title>Work With Me | Theophilus Adeyinka</title>
+    <script type="module" src="../js/components.js" defer></script>
 </head>
 <body class="body">
-    <header class="header border">
+    <nav id="nav" class="h-16 lg:h-24 z-50 relative">
+        <button class="lg:hidden absolute z-20 right-0 top-2 nav-btn">
+            <img id="menuBar" src="../icons/openMenu.svg" alt="" class="menu-bar-mobile openMenuBar cursor-pointer menuBar" >
+        </button>
+        <ul id="menus" class="flex lg:grid lg:grid-flow-col pt-20 lg:pt-0  flex-col items-center h-screen lg:h-full w-full bg-nav lg:bg-transparent fixed z-10 remove-mobile-nav top-0 lg:float-right">
+    </nav>
+    <header class="header border mt-7">
         <h1 class="primary mb-2">WORK <span class="span-heading">WITH ME</span></h1>
-        <p class="mt-3 font-semibold sm:text-center">I pride myself in a few good things that are natural to me. Let’s talk about your next project.</p>
+        <p class="mt-3 font-semibold text-center">I pride myself in a few good things that are natural to me. Let’s talk about your next project.</p>
         <nav class="mt-4 mb-4 lg:mb-8">
-            <ul class="grid sm:grid-flow-col sm:justify-center sm:gap-x-5">
-                <li class="underline"><a href="#websitedesign">Website Design</a></li>
-                <li class="underline"><a href="#copyediting">Copy Editor</a></li>
-                <li class="underline"><a href="#">Writing Training</a></li>
-                <li class="underline"><a href="#">Teaching</a></li>
-                <li class="underline"><a href="#">Marketing</a></li>
+            <ul class="grid sm:grid-flow-col justify-center sm:gap-x-5 gap-y-3">
+                <li class="listItem primary-block"><a href="#websitedesign">Website Design</a></li>
+                <li class="listItem gray-block text-gray-100"><a href="#copyediting">Copy Editor</a></li>
+                <li class="listItem primary-block"><a href="#writingtraining">Writing Training</a></li>
+                <li class="listItem gray-block text-gray-100"><a href="#teaching">Teaching</a></li>
+                <li class="listItem primary-block"><a href="#marketing">Marketing</a></li>
             </ul>
         </nav>
     </header>
 
-    <section class="margin-general margin-section border mb-9" id="websitedesign">
-        <h4 class="mb-2 tertiary" id="websitedesign">Website Design</h4>
-        <img src="" alt="">
-        <div>
-            <p class="mb-6">I design brilliant websites that are fully optimized for conversion. Whether for your personal brand or business, a good website is a good investment, especially if you are in it for the long haul. A good website does three things: it <span class="underline">connects with</span> the right type of audience, <span class="underline">leads people</span> to your <span class="underline">core offerings</span> (they must be able to tell in clear terms what you do), and <span class="underline">collects their contact details</span> for future business relationships. </p>
-            <p class="mb-6">Sadly, most websites are boring billboards of information that do not serve the owner. They fail to reflect novelty, and visitors simply come, look around, remember nothing, feel overwhelmed, and leave.</p>
-            <div class="mb-6">
-                <p class="mb-2">Which is what we do differently…or which is where I come in:</p>
-                <ul>
-                    <li>• First we understand your goals for setting up the website </li>
-                    <li>• Then we streamline your message so that you get known for a singular, important message</li>
-                    <li>• Then we lay out a good design with a stunning, website architecture…</li>
-                    <li>• Then we integrate relevant plug-ins to track and optimize performance… </li>
-                    <li>• Then we refine the overall experience…</li>
-                    <li>• Bearing in mind the three vital functions of a website…connecting, leading, & conversion</li>
-                </ul>
+    <main class="">
+        <section class="border" id="websitedesign">
+            <h4 class="mb-2 tertiary" id="websitedesign">Website Design</h4>
+            <img src="" alt="">
+            <div>
+                <p class="mb-6">I design brilliant websites that are fully optimized for conversion. Whether for your personal brand or business, a good website is a good investment, especially if you are in it for the long haul. A good website does three things: it <span class="underline">connects with</span> the right type of audience, <span class="underline">leads people</span> to your <span class="underline">core offerings</span> (they must be able to tell in clear terms what you do), and <span class="underline">collects their contact details</span> for future business relationships. </p>
+                <p class="mb-6">Sadly, most websites are boring billboards of information that do not serve the owner. They fail to reflect novelty, and visitors simply come, look around, remember nothing, feel overwhelmed, and leave.</p>
+                <div class="mb-6">
+                    <p class="mb-2">Which is what we do differently…or which is where I come in:</p>
+                    <ul>
+                        <li>• First we understand your goals for setting up the website </li>
+                        <li>• Then we streamline your message so that you get known for a singular, important message</li>
+                        <li>• Then we lay out a good design with a stunning, website architecture…</li>
+                        <li>• Then we integrate relevant plug-ins to track and optimize performance… </li>
+                        <li>• Then we refine the overall experience…</li>
+                        <li>• Bearing in mind the three vital functions of a website…connecting, leading, & conversion</li>
+                    </ul>
+                </div>
+                <p class="pb-4">Ready to get started? Click the link <a href="#" class="underline">here</a></p>
             </div>
-            <p class="pb-4">Ready to get started? Click the link <a href="#" class="underline">here</a></p>
-        </div>
-    </section>
+        </section>
+    
+        <section class="border" id="marketing">
+            <h4 class="mb-2 tertiary">Marketing</h4>
+            <img src="" alt="">
+            <p class="mb-6">I work with creators and entrepreneurs to design smart funnels
+                that sell their product or service digitally.</p>
+            <p class="mb-6">A funnel is a sequence of steps that a prospect goes through 
+                before they buy from you. This can be as simple as your traffic—
+                sales page—purchase, or a little more intricate as your traffic—
+                quiz—opt-in page—email sequences—sales page—purchase. I 
+                work with you to define the best funnel for your product or 
+                service, craft the copies, and help you design a well-optimized 
+                funnel. Then we automate the process, and your only goal will 
+                be to drive traffic to the front of the funnel and watch the magic 
+                happen.
+            </p>
+            <p class="pb-4">Need this service? Click <a href="#" class="underline">here.</a></p>
+        </section>
+    
+        <section class="border" id="copyediting">
+            <h4 class="mb-2 tertiary">Copy Editing</h4>
+            <img src="" alt="">
+            <p class="mb-6">I work with authors to bring their best work into the world. It’s tough enough to write a book. But do you know what is tougher? Refining it. Removing the deadwood from your writing and acknowledging the need for a second eye.</p>
+            <p class="mb-6">How do you do that when you don’t yet know your book will sell? So, I understand. I get where most authors come from.</p>
+            <p class="mb-6">But the last thing you want is for a reader to scoff your brainchild, note your name, and swear he will never read your stuff again; to watch your books gather dusts at home and given as unwanted souvenirs at events</p>
+            <p class="mb-6">As one of the scarce few editors who <span class="span-text">hears</span> good writing and <span class="span-text">understands</span> the art, I can work with you to bring your best work into the world. 26 Manuscripts refined to perfection, hanging on different corners of the internet say so.</p>
+            <p class="pb-4">Have a project? See if we can work together <a href="#" class="underline">here.</a></p>
+        </section>
+    
+        <section class="border" id="writingtraining">
+            <h4 class="mb-2 tertiary">Writing Training</h4>
+            <img src="" alt="">
+            <p class="mb-6">I help creators and professionals rise above the limitations of 
+                terrible writing. If you make evasive mistakes in your writings, it 
+                can be tasking to overcome it yourself. Learning to write well can 
+                be boring and overwhelming.</p>
+            <p class="mb-6">The rules of writing seem <span class="underline">endless</span> and very few people are able to 
+                connect them. Online courses <span class="underline">barely touch the foundations</span> and 
+                books dwell too much on terminologies. So, you waste time.
+                Thus, what I do differently. </p>
+            <p class="mb-6">I teach you to build a coherent loop to UNDERSTAND the subtle 
+                nuances that make all the difference. I help you understand good 
+                grammar and writing so you can win a special place in the heart of 
+                your audience. I help you write well for yourself. I bring to class 
+                my passion, knowledge from more than 6 books on the subject, 
+                many conscious trainings on writing and editing, personal 
+                experience from writing and teaching others, stories, and above 
+                all, simplicity.</p>
+            <p class="pb-4">To join the next training section, click <a href="#" class="underline">here.</a></p>
+        </section>
+    
+        <section class="border" id="teaching">
+            <h4 class="mb-2 tertiary">Teaching</h4>
+            <img src="" alt="">
+            <p class="mb-6">I teach Writing, Marketing, and Maths, and speak on career and 
+                what education should be like today for young students. From 
+                experience, I understand some useful things and like to rave about 
+                them</p>
+            <p class="pb-4">I am available for physical and virtual speaking engagements on this subject. To contack me, click <a href="#" class="underline">here.</a></p>
+        </section>
+    
+        <section class="faq">
+            <h5 class="tertiary text-center mb-5">FAQs</h5>
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 justify-center text-center gap-5 items-start justify-items-center">
+                <div class="w-80 block_ primary-block py-3 px-4 question">
+                    <p class="mb-1">How do you charge for your editing?</p>
+                    <p class="hidden transition glass">Cost varies from N5 – N10 per count</p>
+                </div>
+                <div class="w-80 block_ gray-block text-gray-100 py-3 px-4 question">
+                    <p class="mb-1">What do you charge for website design?</p>
+                    <p class="hidden transition  glass">This depends on the scope of the website or funnel. Cost varies from N150,000 for a landing page to a few millions for a full-scale website</p>
+                </div>
+                <div class="w-80 block_ primary-block py-3 px-4 question">
+                    <p class="mb-1">Do you offer writing services?</p>
+                    <p class="hidden transition  glass">Rarely. I prefer it to be part of a larger project like funnel design, web design, or editing. I 
+                        often make a few exceptions and you can send a quick message here</p>
+                </div>
+                <div class="w-80 block_ gray-block text-gray-100 py-3 px-4 question">
+                    <p class="mb-1">How much is the writing training?
+                    </p>
+                    <p class="hidden transition  glass">N25,000 for three weeks group coaching. 
+                        N60,000/month for a private training.</p>
+                </div>
+                <div class="w-80 block_ primary-block py-3 px-4 question">
+                    <p class="mb-1">Do you run adverts for people?</p>
+                    <p class="hidden transition  glass">Not yet. I only design an end-to-end funnel for your product or service. This includes copywriting, page design, and email sequences</p>
+                </div>
+            </div>
+        </section>
 
-    <section class="margin-general" id="copyediting">
-        <h4 class="mb-2 tertiary">Copy Editing</h4>
-        <img src="" alt="">
-        <p class="mb-6">I work with authors to bring their best work into the world. It’s tough enough to write a book. But do you know what is tougher? Refining it. Removing the deadwood from your writing and acknowledging the need for a second eye.</p>
-        <p class="mb-6">How do you do that when you don’t yet know your book will sell? So, I understand. I get where most authors come from.</p>
-        <p class="mb-6">But the last thing you want is for a reader to scoff your brainchild, note your name, and swear he will never read your stuff again; to watch your books gather dusts at home and given as unwanted souvenirs at events</p>
-        <p class="mb-6">As one of the scarce few editors who <span class="span-text">hears</span> good writing and <span class="span-text">understands</span> the art, I can work with you to bring your best work into the world. 26 Manuscripts refined to perfection, hanging on different corners of the internet say so.</p>
-        <p>Have a project? See if we can work together <a href="#" class="underline">here.</a></p>
-    </section>
+        <section class="md:text-center">
+            <h4 class="tertiary mb-4 text-center">Credible, Authentic and Evolving...</h4>
+            <div class="grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-5 mb-4 justify-center">
+                <p class="w-80 sm:w-auto block_ primary-block px-4 py-2">Brand and product management</p>
+                <p class="w-80 sm:w-auto block_ gray-block text-gray-100  px-4 py-2">Integrated Marketing Communication</p>
+                <p class="w-80 sm:w-auto block_ primary-block px-4 py-2">Writing and Editing</p>
+                <p class="w-80 sm:w-auto block_ gray-block text-gray-100 px-4 py-2">Business Writing and Horrors</p>
+                <p class="w-80 sm:w-auto block_ primary-block px-4 py-2">Six Sigma Yellow Belt</p>
+                <p class="w-80 sm:w-auto block_ gray-block text-gray-100 px-4 py-2">Digital Marketing Nanodegree</p>
+                <p class="w-80 sm:w-auto block_ primary-block px-4 py-2">Corporate Strategy</p>
+                <p class="w-80 sm:w-auto block_ gray-block text-gray-100 px-4 py-2">McKinsey Forward Program</p>
+            </div>
+            <p class="text-center"><a href="#">Let's Work Together</a></p>
+        </section>
+
+    </main>
+    <footer class="footer"></footer>
 </body>
 </html>

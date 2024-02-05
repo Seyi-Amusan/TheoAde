@@ -4,10 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../styles.css">
+    <script type="module" src="../js/components.js" defer></script>
     <title>Projects | Theophilus Adeyinka</title>
 </head>
 <body class="body">
-    <header class="header border">
+    <nav id="nav" class="h-16 lg:h-24 z-50 relative">
+        <button class="lg:hidden absolute z-20 right-0 top-2 nav-btn">
+            <img id="menuBar" src="../icons/openMenu.svg" alt="" class="menu-bar-mobile openMenuBar cursor-pointer menuBar" >
+        </button>
+<ul id="menus" class="flex lg:grid lg:grid-flow-col pt-20 lg:pt-0  flex-col items-center h-screen lg:h-full w-full bg-nav lg:bg-transparent fixed z-10 remove-mobile-nav top-0 lg:float-right">
+    </nav>
+    <header class="header border mt-7">
         <h1 class="primary"><span class="span-heading">PROJECTS</span></h1>
         <h3 class="mt-2 text-center">Things I move forward for everyday</h3>
         <nav class="mt-5 pb-7">
@@ -17,11 +24,11 @@
             </ul>
         </nav>
     </header>
-    <main class="margin-general">
-        <section class="margin-section grid md:justify-items-center md:grid-cols-2 gap-y-8" id="thenukehub">
-            <div class="md:col-span-2 books">
-                <h4 class="tertiary md:text-center">The Nuke Hub</h4>
-                <p class="md:text-center">Community and peer-to-peer learning platform</p>
+    <main class="">
+        <section class=" grid md:justify-items-center md:grid-cols-2 gap-y-8" id="thenukehub">
+            <div class="md:col-span-2 block_ gray-block h-32">
+                <h4 class="tertiary font-bold text-gray-100">The Nuke Hub</h4>
+                <p class= 'px-3 text-gray-100'>Community and peer-to-peer learning platform</p>
             </div>
             <!-- <img src="" alt="">
             <img src="" alt=""> -->
@@ -31,13 +38,13 @@
                 <p>Starting with the belief that <span class="span-text">everyone</span> who has <span class="span-text">achieved some success</span> or <span class="span-text">progress towards a goal</span> has something to share,</p>
                 <p><span class="span-text">The Nuke</span> aims to present a platform that fosters that conversation. More importantly, it aims to help you get started</p>
             </div>
-            <div class="md:col-span-1 books md:text-center">
-                <h5 class="text-xl underline">What the traditional community is…</h5>
-                <p>A leader sharing his esteemed insights with the less fortunate members…</p>
+            <div class="md:col-span-1  block_ gray-block h-32 px-4">
+                <h5 class="text-xl text-gray-100 ">What the traditional community is…</h5>
+                <p class="text-gray-100">A leader sharing his esteemed insights with the less fortunate members…</p>
             </div>
-            <div class="md:col-span-1 books md:text-center">
-                <h5 class="text-xl underline">What The Nuke Hub is…</h5>
-                <p>Community and peer-to-peer learning…</p>
+            <div class="md:col-span-1  block_ gray-block h-32 px-4">
+                <h5 class="text-xl text-gray-100">What The Nuke Hub is…</h5>
+                <p class="text-gray-100">Community and peer-to-peer learning…</p>
             </div>
             <div class="md:col-span-2">
                 <h5 class="text-xl underline md:text-center">The Features:</h5>
@@ -54,21 +61,22 @@
             </div>
         </section>
 
-        <section class="margin-section" id="ischoolabs">
-            <div class="books md:w-96 md:mx-auto mb-5">
-                <h4 class="tertiary md:text-center">I-Schoollabs</h4>
-                <p class="md:text-center">Transparent education for the modern-day student. | Per discere ad astr</p>
+        <section id="ischoolabs">
+            <div class=" md:w-96 md:mx-auto mb-5 block_ primary-block h-32">
+                <h4 class="tertiary">I-Schoollabs</h4>
+                <p>Transparent education for the modern-day student. |</p>
+                <p> Per discere ad astr</p>
             </div>
 
             <div class="mb-9">
                 <img src="" alt="">
-                <p class="">I believe in education that will make every individual his own sovereign entity. There are many loops in our educational system which leaves many students to graduate scared, anxious, frustrated, and drifting.</p>
+                <p>I believe in education that will make every individual his own sovereign entity. There are many loops in our educational system which leaves many students to graduate scared, anxious, frustrated, and drifting.</p>
             </div>
 
             <div class="mb-9">
                 <h5 class="text-xl underline md:text-center mb-7">Here are a few flaws from my experience</h5>
                 <div class="grid grid-cols-2 grid-rows-4 grid-flow-col gap-x-2 gap-y-5 grid-decor">
-                    <p class="">Schools teach all topics in bits...and due to inconsistencies in its processes, you will lose some parts.</p>
+                    <p>Schools teach all topics in bits...and due to inconsistencies in its processes, you will lose some parts.</p>
                     <p>We aim to build coherence and build that faster</p>
                     <p>School lessons are incomplete—both in preparing students for higher institutions and helping them post-graduation.</p>
                     <p>We aim to help students beyond school schemes through early exposure to the right information</p>
@@ -81,7 +89,7 @@
 
             <div class="mb-9">
                 <img src="" alt="">
-                <p class="">These, among other issues, are what we aim to solve through @ischoollabs, starting primarily with high school students.
+                <p>These, among other issues, are what we aim to solve through @ischoollabs, starting primarily with high school students.
                     I believe high-school learning is a movement waiting to happen. 
                     Many programs and opportunities focus on graduates and postgraduates, and have left the bright minds in high school to rote 
                     learning, overwhelming distractions, and figuring things out on 
@@ -93,14 +101,15 @@
         </section>
 
         <section>
-            <p class="text-center">Too god to be true? Follow the development here:</p>
+            <p class="text-center">Too good to be true? Follow the development here:</p>
             <div class="grid grid-flow-col justify-center items-center">
-                <a href="#"><img src="../icons/facebook-icon.svg" alt="" class="h-6 mr-2"></a>
+                <a href="#"><img src="../icons/facebook-icon.svg" alt="" class="h-7 mr-2"></a>
                 <a href="#"><img src="../icons/twitter-icon.svg" alt="" class="h-7 mr-2"></a>
-                <a href="#"><img src="../icons/whatsapp-icon.svg" alt="" class="h-6 mr-2"></a>
-                <a href="#"><img src="../icons/linkedin-icon.svg" alt="" class="h-6 mr-2"></a>
+                <a href="#"><img src="../icons/whatsapp-icon.svg" alt="" class="h-7 mr-2"></a>
+                <a href="#"><img src="../icons/linkedin-icon.svg" alt="" class="h-7 mr-2"></a>
             </div>
         </section>
     </main>
+    <footer class="footer"></footer>
 </body>
 </html>

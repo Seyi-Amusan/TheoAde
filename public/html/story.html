@@ -4,16 +4,23 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../styles.css">
+    <script  src="../js/components.js" defer></script>
     <title>My Story | Theophilus Adeyinka</title>
 </head>
 <body class="body">
-    <header class="header border">
+    <nav id="nav" class="h-16 lg:h-24 z-50 relative">
+        <button class="lg:hidden absolute z-20 right-0 top-2 nav-btn">
+            <img id="menuBar" src="../icons/openMenu.svg" alt="" class="menu-bar-mobile openMenuBar cursor-pointer menuBar" >
+        </button>
+        <ul id="menus" class="flex lg:grid lg:grid-flow-col pt-20 lg:pt-0  flex-col items-center h-screen lg:h-full w-full bg-nav lg:bg-transparent fixed z-10 remove-mobile-nav top-0 lg:float-right">
+    </nav>
+    <header class="header border mt-7">
         <h1 class="primary mb-3">MY <span class="span-heading">STORY</span></h1>
     </header>
-    <main class="margin-general">
-        <section class="margin-section">
+    <main>
+        <section>
             <article>
-                <p class="marginBottom-text hover-text hover-text">There is a saying: Life gives you wisdom but only after it has robbed you of strength</p>
+                <p class="marginBottom-text hover-text">There is a saying: Life gives you wisdom but only after it has robbed you of strength</p>
                 <p class="marginBottom-text hover-text">
                     Ever been in one of those situations where you know the right response but only after the 
                     conversation has happened? That feeling, right? So is my journey. Except I’m one of the 
@@ -50,44 +57,44 @@
             </article>
         </section>
 
-        <section class="margin-section">
+        <section>
             <h4 class="tertiary heading-gradient marginTertiary-heading">Meet Me in <span class="span-heading">6 Flips</span></h4>
-            <article class="grid gap-y-4 sm:grid-cols-3 sm:grid-rows-2 sm:gap-x-4 sm:justify-center">
-                <div class="grid-decor">
-                    <h5 class="span-heading heading-gradient">Favourite movie</h5>
-                    <p><span class="span-text">The Words</span>– teaches you to embrace your processes and outcomes without compromise, so you can believe in you and your victories. Teaches love too.</p>
+            <article class="grid gap-y-4 sm:grid-cols-2 md:grid-cols-3 sm:gap-x-4 sm:justify-center">
+                <div class="block_ primary-block py-2 px-3">
+                    <h5 class="font-bold text-lg text-start">Favourite movie</h5>
+                    <p class="text-start"><span class="span-text">The Words</span>– teaches you to embrace your processes and outcomes without compromise, so you can believe in you and your victories. Teaches love too.</p>
                 </div>
-                <div class="grid-decor">
-                    <h5 class="span-heading heading-gradient">Earliest Influence</h5>
-                    <p><span class="span-text">Dr Strive Masiyiwa</span> and his series of articles on Facebook</p>
+                <div class="block_ gray-block text-gray-100 py-2 px-3">
+                    <h5 class="font-bold text-lg text-start">Earliest Influence</h5>
+                    <p class="text-start"><span class="span-text">Dr Strive Masiyiwa</span> and his series of articles on Facebook</p>
                 </div>
-                <div class="grid-decor">
-                    <h5 class="span-heading heading-gradient">Greatest Influence</h5>
-                    <p><span class="span-text">Dharmesh Shah </span>– I like his presentations and think we have a lot in common.</p>
-                    <p>Tony Elumelu – The brand, personal conviction, and philanthropy</p>
+                <div class="block_ primary-block py-2 px-3">
+                    <h5 class="font-bold text-lg text-start">Greatest Influence</h5>
+                    <p class="text-start"><span class="span-text">Dharmesh Shah </span>– I like his presentations and think we have a lot in common.</p>
+                    <p class="text-start">Tony Elumelu – The brand, personal conviction, and philanthropy</p>
                 </div>
-                <div class="grid-decor">
-                    <h5 class="span-heading heading-gradient">Role Model</h5>
-                    <p><span class="span-text">Dharmesh Shah</span> – I like his presentations and think we have a lot in common.</p>
-                    <p><span class="span-text">Tony Elumelu</span> – The brand, personal conviction, and philanthropy</p>
+                <div class="block_ gray-block text-gray-100 py-2 px-3">
+                    <h5 class="font-bold text-lg text-start">Role Model</h5>
+                    <p class="text-start"><span class="span-text">Dharmesh Shah</span> – I like his presentations and think we have a lot in common.</p>
+                    <p class="text-start"><span class="span-text">Tony Elumelu</span> – The brand, personal conviction, and philanthropy</p>
                 </div>
-                <div class="grid-decor">
-                    <h5 class="span-heading heading-gradient">Two Philosophies</h5>
-                    <p>* Specific knowledge – playing at the intersection of multiple skills that are authentic to you.</p>
-                    <p>* Staying competitive but <span class="span-text">never competing</span></p>
+                <div class="block_ primary-block py-2 px-3">
+                    <h5 class="font-bold text-lg text-start">Two Philosophies</h5>
+                    <p class="text-start">* Specific knowledge – playing at the intersection of multiple skills that are authentic to you.</p>
+                    <p class="text-start">* Staying competitive but <span class="span-text">never competing</span></p>
                 </div>
-                <div class="grid-decor">
-                    <h5 class="span-heading heading-gradient">Best Fiction</h5>
-                    <p><span class="span-text">Origin </span>– Dan Brown </p>
+                <div class="block_ gray-block text-gray-100 py-2 px-3">
+                    <h5 class="font-bold text-lg text-start">Best Fiction</h5>
+                    <p class="text-start"><span class="span-text">Origin </span>– Dan Brown </p>
                 </div>
             </article>
         </section>
 
-        <section class="margin-section">
+        <section>
 
             <p class="font-bold text-center mb-3">Want To Hear from Me? Subscribe to <span class="underline">People Like Us...</span></p>
             <p class="text-center mb-3">No frequency, No spam. Only When I Have Something Useful to Say.</p>
-            <form class="grid sm:justify-center gap-y-3 sm:grid-flow-col sm:gap-x-5">
+            <form class="grid justify-center gap-y-3 sm:grid-flow-col sm:gap-x-5">
                 <div>
                     <label for="#email">Email</label>
                     <input id="email" type="text" placeholder="Your best email" class="grid-decor">
@@ -96,9 +103,11 @@
                     <label for="#name">Name</label>
                     <input id="name" type="text" placeholder="Your name" class="grid-decor">
                 </div>
+                <button type="submit" class="primary-block py-2 px-3 w-32 rounded-md text-gray-100 font-bold justify-self-center self-end">Submit</button>
             </form>
         </section>
 
     </main>
+    <footer class="footer"></footer>
 </body>
 </html>
